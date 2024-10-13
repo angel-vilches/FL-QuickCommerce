@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.freelance.quickcommerce.models.UserModel;
 import com.freelance.quickcommerce.services.UserService;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
