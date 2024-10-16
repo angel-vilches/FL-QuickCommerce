@@ -1,0 +1,18 @@
+{
+    "productList": [
+        {
+            "title": "Book #1",
+            "image": "https://img.freepik.com/fotos-premium/ilustracion-dibujos-animados-libros-dibujados-mano_1240525-51171.jpg?size=338&ext=jpg&ga=GA1.1.967060102.1728864000&semt=ais_hybrid-rr-similar",
+            "description": "Book #1 description",
+            "price": "$1.000",
+            "stock": 4
+        },
+        {
+            "title": "Book #2",
+            "image": "https://img.freepik.com/fotos-premium/ilustracion-dibujos-animados-libros-dibujados-mano_1240525-51171.jpg?size=338&ext=jpg&ga=GA1.1.967060102.1728864000&semt=ais_hybrid-rr-similar",
+            "description": "Book #2 description",
+            "price": "$3.000",
+            "stock": 1
+        }
+    ]
+}

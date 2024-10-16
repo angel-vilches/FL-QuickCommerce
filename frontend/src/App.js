@@ -1,25 +1,43 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Product from './Components/Product';
+import {Container, Row} from 'reactstrap';
+import NavigationBar from './Components/NavigationBar';
+import productList from './productList.json';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          React app
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(){
+    super();
+    this.state = {
+      productList
+    };
+  }
+  render() {
+    const componentArray = this.state.productList.productList.map(
+      (productList, i) => {
+        return(
+          <Product
+            key={i}
+            title={productList.title}
+            image={productList.image}
+            description={productList.description}
+            price={productList.price}
+            stock={productList.stock}
+          />
+        )
+      }
+    );
+    return (
+      <>
+        <NavigationBar title="Quickcommerce"/>
+        <Container>
+          <Row>
+            {componentArray}
+          </Row>
+        </Container>
+      </>
+    );
+  }
 }
 
 export default App;
